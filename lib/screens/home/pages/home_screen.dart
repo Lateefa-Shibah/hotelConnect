@@ -5,15 +5,11 @@ import 'package:hotel_connect/shared/constants.dart';
 import 'package:provider/provider.dart';
 
 class HomeScreen extends StatelessWidget {
+  final HotelList hotelDetail;
+  HomeScreen({this.hotelDetail});
   @override
   Widget build(BuildContext context) {
-    final hotelDetail = Provider.of<HotelList>(context) ??
-        HotelList(
-          location: '',
-          overview: '',
-          name: '',
-          logo: '',
-        );
+    
     return Container(
       decoration: BoxDecoration(
         gradient: LinearGradient(

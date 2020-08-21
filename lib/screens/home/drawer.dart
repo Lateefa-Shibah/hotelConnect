@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:hotel_connect/models/hotel_list.dart';
 import 'package:hotel_connect/screens/home/pages/services.dart';
 import 'package:hotel_connect/screens/ordering/ordering.dart';
 import 'package:hotel_connect/screens/payments/payment.dart';
 // import 'package:hotel_connect/screens/home/settings_form.dart';
 import 'package:hotel_connect/services/auth.dart';
+import 'package:provider/provider.dart';
 
 
 class MyDrawer extends StatelessWidget {
@@ -14,6 +16,13 @@ class MyDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final hotelDetail = Provider.of<HotelList>(context) ??
+        HotelList(
+          location: '',
+          overview: '',
+          name: '',
+          logo: '',
+        );
     // void _showSettingsPanel(){
     //   showModalBottomSheet(context:context, builder:(context){
 

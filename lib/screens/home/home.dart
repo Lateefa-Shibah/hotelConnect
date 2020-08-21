@@ -10,6 +10,8 @@ import 'package:hotel_connect/models/hotel.dart';
 
 
 class Home extends StatefulWidget {
+  final HotelList hotelDetail;
+  Home({this.hotelDetail});
 
   // final AuthService _auth = AuthService();
 
@@ -51,7 +53,7 @@ class _HomeState extends State<Home> {
                     ),
                   onPressed:(){
                     setState(() {
-                      _currentPage = HomeScreen();
+                      _currentPage = HomeScreen(hotelDetail: widget.hotelDetail,);
                       
                     });
                   },

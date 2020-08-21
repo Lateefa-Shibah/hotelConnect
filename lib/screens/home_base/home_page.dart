@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:hotel_connect/models/hotel_list.dart';
+import 'package:hotel_connect/models/order_model.dart';
 // import 'package:hotel_connect/models/user_profile.dart';
 import 'package:hotel_connect/screens/home_base/hotel_items.dart';
 import 'package:hotel_connect/screens/home_base/searchBar.dart';
+import 'package:hotel_connect/services/database.dart';
 import 'package:provider/provider.dart';
 
 class HomePage extends StatefulWidget {
@@ -46,30 +48,36 @@ class _HomePageState extends State<HomePage> {
         elevation: 0.0,
         backgroundColor: Colors.redAccent[400],
       ),
-      body: Container(
-        //decoration: BoxDecoration(
-        //  image: DecorationImage(
-        //    image: AssetImage("assets/images/background1.jpeg"),
-        //  fit: BoxFit.cover)),
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            colors: [Color.fromRGBO(1, 89, 99, 1.0), Colors.redAccent[100]],
-            begin: Alignment.bottomLeft,
-            end: Alignment.topRight,
+      body: StreamProvider<HotelList>.value(
+        value: DatabaseService().hoteldetail,
+              child: StreamProvider<List<OrderModel>>.value(
+                value: DatabaseService().orderLists,
+                              child: Container(
+          //decoration: BoxDecoration(
+          //  image: DecorationImage(
+          //    image: AssetImage("assets/images/background1.jpeg"),
+          //  fit: BoxFit.cover)),
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+                colors: [Color.fromRGBO(1, 89, 99, 1.0), Colors.redAccent[100]],
+                begin: Alignment.bottomLeft,
+                end: Alignment.topRight,
+            ),
           ),
+          padding: EdgeInsets.zero,
+          margin: EdgeInsets.zero,
+          child: ListView.builder(
+                controller: ScrollController(
+                    debugLabel: 'Controller', initialScrollOffset: 10.0),
+                itemCount: hotelList.length,
+                itemBuilder: (context, index) {
+                  return HotelItem(
+                    item: hotelList[index],
+                    // userProfileInfo: userProfileInfo,
+                  );
+                }),
         ),
-        padding: EdgeInsets.zero,
-        margin: EdgeInsets.zero,
-        child: ListView.builder(
-            controller: ScrollController(
-                debugLabel: 'Controller', initialScrollOffset: 10.0),
-            itemCount: hotelList.length,
-            itemBuilder: (context, index) {
-              return HotelItem(
-                item: hotelList[index],
-                // userProfileInfo: userProfileInfo,
-              );
-            }),
+              ),
       ),
     );
   }

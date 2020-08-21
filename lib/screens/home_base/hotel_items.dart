@@ -3,6 +3,7 @@ import 'package:hotel_connect/models/hotel_list.dart';
 import 'package:hotel_connect/screens/home/home.dart';
 // import 'package:hotel_connect/screens/home/pages/home_screen.dart';
 import 'package:hotel_connect/models/user_profile.dart';
+import 'package:provider/provider.dart';
 
 class HotelItem extends StatelessWidget {
   final HotelList item;
@@ -11,6 +12,13 @@ class HotelItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final hotelDetail = Provider.of<HotelList>(context) ??
+        HotelList(
+          location: '',
+          overview: '',
+          name: '',
+          logo: '',
+        );
     return Padding(
       padding: EdgeInsets.only(top: 2.0),
       child: Container(
