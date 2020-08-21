@@ -1,0 +1,22 @@
+[
+{
+    "placeImage": "images/pharmacy.jpg",
+    "placeName": "Pharmacy",
+    "placeItems": ["PainMeds", "Injectables", "Sanitary Towels", "Baby Care"]
+},
+{
+    "placeImage": "images/transport.jpg",
+    "placeName": "Trasportation",
+    "placeItems": ["Chaffeur", "Taxi", "Bus", "Limousine"]
+},
+{
+    "placeImage": "images/shopping.jpg",
+    "placeName": "Gift Shops",
+    "placeItems": ["Clothing", "Shoes", "Bags", "Hats"]
+},
+{
+    "placeImage": "images/laundry.jpg",
+    "placeName": "Laundry",
+    "placeItems": ["Clothes", "Jackets", "Suits", "Blankets"]
+}
+]

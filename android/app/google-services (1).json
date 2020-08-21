@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "715661367674",
+    "firebase_url": "https://hotelconnect-b6423.firebaseio.com",
+    "project_id": "hotelconnect-b6423",
+    "storage_bucket": "hotelconnect-b6423.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:715661367674:android:e7021e5271bd0e39dfdec3",
+        "android_client_info": {
+          "package_name": "com.lateefa.hotel_connect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "715661367674-tbrmcpb745lc53228d0h3pd37glosc6b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmAO1HdDo3cp6JzKzYga-URJpmRIqOZn8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "715661367674-tbrmcpb745lc53228d0h3pd37glosc6b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:715661367674:android:ded5d2bb4f1db2c4dfdec3",
+        "android_client_info": {
+          "package_name": "com.shibah.hotel_connect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "715661367674-tbrmcpb745lc53228d0h3pd37glosc6b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmAO1HdDo3cp6JzKzYga-URJpmRIqOZn8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "715661367674-tbrmcpb745lc53228d0h3pd37glosc6b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

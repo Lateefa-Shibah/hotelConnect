@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "324686377913",
+    "firebase_url": "https://hotel-connect-df724.firebaseio.com",
+    "project_id": "hotel-connect-df724",
+    "storage_bucket": "hotel-connect-df724.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:324686377913:android:e7ededdeb9acf42aa6bc68",
+        "android_client_info": {
+          "package_name": "com.lateefa.hotel_connect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "324686377913-48jfucen07ujo6pv19erv5c3vj3iimj5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIKy2XIgwpF9nqSyPVPm1wWzNaZrYzMjM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "324686377913-48jfucen07ujo6pv19erv5c3vj3iimj5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
